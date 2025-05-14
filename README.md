@@ -1,5 +1,7 @@
 # GitProject
 
+I have added this line by making a pull request
+
 This project is created to demonstrate my understanding of Git, including repository setup, branching, merging, and remote collaboration using GitHub.
 
 ## Project Structure
@@ -27,7 +29,7 @@ Each class uses a std::multi map to store names and integer values (such as name
 5. Added a main function in the master branch to demonstrate usage of the three classes.
 6. Pushed the repository with all branches to GitHub.
 7. Forked the repository from another GitHub account.
-8. Made a comment in the forked repo and submitted a pull request back to the main account (in a branch called ForkingBranch).
+8. Made a comment in the beginning of the forked repo and submitted a pull request back to the main account (in a branch called ForkingBranch).
 
 ## Purpose
 
