@@ -25,6 +25,13 @@ class Students
             cin >> StudentsDataKey;
             multimap<string,int> :: iterator Item ;
             Item = StudentsData.find(StudentsDataKey);
+
+            if (Item == StudentsData.end())
+            {
+                cout << "Student not found!" << endl;
+                return 0;
+            }
+
             return Item->second;
         }
 
