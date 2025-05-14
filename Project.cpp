@@ -45,14 +45,5 @@ public:
 
 int main()
 {
-    Managers ManagersSystem;
-
-    for (int i = 0; i < 4; i++)
-    {
-        ManagersSystem.SetManagerDataItem();
-    }
-
-    cout << "The ownership percentage of the manager is: " << ManagersSystem.GetManagerOwnershipPercentage() << "%" << endl;
-
-    ManagersSystem.PrintAllManagersData();
+    
 }
