@@ -133,5 +133,88 @@ public:
 
 int main()
 {
-    
+    Students student;
+    Teachers teacher;
+    Managers manager;
+
+    bool continueProgram = true;
+    int SystemNum;
+    int OperationNum;
+    cout<<"Hello, please enter the system number : press 1 for Students , 2 for Teachers or 3 for Managers"<<endl;
+    cin >> SystemNum;
+
+    while(continueProgram)
+    {
+
+        switch(SystemNum)
+        {
+            case 1 :
+            {
+                cout << "Please enter the operation number (1: Set Data, 2: Get Grade, 3: Print All): ";
+                cin >> OperationNum;
+
+                switch(OperationNum)
+                {
+                    case 1:
+                        student.SetStudentDataItem();
+                        break;
+                    case 2:
+                        cout << "Student Grade: " << student.GetStudentGrade() << endl;
+                        break;
+                    case 3:
+                        student.PrintAllStudentsData();
+                        break;
+                    default:
+                        cout << "Invalid operation number!" << endl;
+                }
+                break;
+            }
+            case 2 :
+            {
+                cout << "Please enter the operation number (1: Set Data, 2: Get Age, 3: Print All): ";
+                cin >> OperationNum;
+
+                switch(OperationNum)
+                {
+                    case 1:
+                        teacher.SetTeacherDataItem();
+                        break;
+                    case 2:
+                        cout << "Teacher Age: " << teacher.GetTeacherAge() << endl;
+                        break;
+                    case 3:
+                        teacher.PrintAllTeachersData();
+                        break;
+                    default:
+                        cout << "Invalid operation number!" << endl;
+                }
+                break;
+            }
+            case 3 :
+            {
+                cout << "Please enter the operation number (1: Set Data, 2: Get Ownership Percentage, 3: Print All): ";
+                cin >> OperationNum;
+
+                switch(OperationNum)
+                {
+                    case 1:
+                        manager.SetManagerDataItem();
+                        break;
+                    case 2:
+                        cout << "Manager Ownership Percentage: " << manager.GetManagerOwnershipPercentage() << "%" << endl;
+                        break;
+                    case 3:
+                        manager.PrintAllManagersData();
+                        break;
+                    default:
+                        cout << "Invalid operation number!" << endl;
+                }
+                break;
+            }
+            default:
+                cout << "Invalid system number" << endl;
+        }
+        cout << "Do you want to continue? (1: Yes, 0: No): ";
+        cin >> continueProgram;
+    }
 }
