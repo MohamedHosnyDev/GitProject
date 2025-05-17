@@ -3,8 +3,7 @@
 This project is created to demonstrate my understanding of Git, including repository setup, branching, merging, and remote collaboration using GitHub.
 
 Note:
-This README was originally located in the main branch. Its contents have been moved here so that the main branch which only contained this file and could not be merged with master branch can be deleted.
-Please note that you will not find this file in my local repo because it was added recently and has not been pulled to the local repo.
+This README was originally located in the main branch. Its content have been moved to the master branch so that the main branch which only contained this file and could not be merged with master branch can be deleted.
 
 ## Project Structure
 
